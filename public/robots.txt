@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://dreamsfactory.com/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Allow important pages
+Allow: /
+Allow: /portfolio
+Allow: /servicios
+Allow: /clientes
+Allow: /sobre-nosotros
+Allow: /contacto
+Allow: /blog
+

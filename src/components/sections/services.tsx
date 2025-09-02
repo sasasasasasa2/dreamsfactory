@@ -47,7 +47,7 @@ const Services = () => {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: [0.6, -0.05, 0.01, 0.99],
+        ease: "easeOut" as const,
       },
     },
   };
@@ -278,7 +278,10 @@ const Services = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-df-accent/20 to-df-green/20 z-10" />
                 <div className="w-full h-full bg-df-gray flex items-center justify-center">
-                  <services[activeService].icon className="w-24 h-24 text-df-accent" />
+                  {(() => {
+                    const IconComponent = services[activeService].icon;
+                    return <IconComponent className="w-24 h-24 text-df-accent" />;
+                  })()}
                 </div>
               </motion.div>
             </div>

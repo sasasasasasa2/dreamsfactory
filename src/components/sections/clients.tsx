@@ -33,7 +33,7 @@ const Clients = () => {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: [0.6, -0.05, 0.01, 0.99],
+        ease: "easeOut" as const,
       },
     },
   };
@@ -203,7 +203,7 @@ const Clients = () => {
 
                 {/* Content */}
                 <p className="df-text mb-6 italic">
-                  "{testimonial.content}"
+                  &ldquo;{testimonial.content}&rdquo;
                 </p>
 
                 {/* Metrics */}

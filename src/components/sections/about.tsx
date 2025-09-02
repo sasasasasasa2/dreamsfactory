@@ -44,7 +44,7 @@ const About = () => {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: [0.6, -0.05, 0.01, 0.99],
+        ease: "easeOut" as const,
       },
     },
   };
@@ -276,9 +276,9 @@ const About = () => {
               Nuestra Promesa
             </h3>
             <p className="text-xl text-df-text mb-6 leading-relaxed">
-              "No te vendemos un proyecto, te vendemos una transformación. 
+              &ldquo;No te vendemos un proyecto, te vendemos una transformación. 
               No te entregamos código, te entregamos ventaja competitiva. 
-              No somos tu proveedor, somos tu arma secreta."
+              No somos tu proveedor, somos tu arma secreta.&rdquo;
             </p>
             <div className="text-df-accent font-bold text-lg">
               — Equipo DREAMSFACTORY
